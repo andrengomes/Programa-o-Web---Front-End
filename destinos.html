@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos - Blog de Viagem</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos para a seção de destinos */
+        .destinos-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .destino {
+            width: 30%;
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .destino img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .destino-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .destino h3 {
+            font-size: 1.5em;
+            color: #4A754A;
+        }
+
+        .destino p {
+            color: #555;
+            font-size: 1em;
+        }
+
+        .destino:hover {
+            transform: translateY(-10px); /* Efeito de elevação ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="dicas.html">Dicas de Viagem</a></li>
+                <li><a href="roteiros.html">Roteiros Personalizados</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Destinos Mais Viajados</h2>
+        
+        <div class="destinos-container">
+            <!-- Destino 1: Paris -->
+            <div class="destino">
+                <img src="imagens/paris.jpg" alt="Paris">
+                <div class="destino-content">
+                    <h3>Paris</h3>
+                    <p>Explore a cidade da luz, famosa por sua arquitetura histórica, museus incríveis e uma vida noturna vibrante.</p>
+                </div>
+            </div>
+
+            <!-- Destino 2: Nova York -->
+            <div class="destino">
+                <img src="imagens/nova york.jpg" alt="Nova York">
+                <div class="destino-content">
+                    <h3>Nova York</h3>
+                    <p>Conheça a Big Apple! Cultura, arte, shopping e uma infinidade de atrações te aguardam em Nova York.</p>
+                </div>
+            </div>
+
+            <!-- Destino 3: Tokyo -->
+            <div class="destino">
+                <img src="imagens/toquio.jpg" alt="Tokyo">
+                <div class="destino-content">
+                    <h3>Tóquio</h3>
+                    <p>Uma cidade futurística com uma mistura de tradições antigas e inovações tecnológicas impressionantes.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blog de Viagem - Todos os direitos reservados.</p>
+        <p> Desenvolvedor André Gomes</p>
+    </footer>
+</body>
+</html>

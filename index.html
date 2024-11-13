@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roteiros Personalizados</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <style>
+        /* Estilos para a estrutura de colunas */
+        .content {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            text-align: center;
+        }
+        .column {
+            flex: 1;
+            margin: 0 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
+            align-items: center;
+        }
+        .column h3 {
+            color: #4A754A; 
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        .column p {
+            font-size: 1em;
+            line-height: 1.5;
+            max-width: 600px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="nav-list">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinos.html">Destinos</a></li>
+                <li><a href="dicas.html">Dicas de Viagem</a></li>
+                <li><a href="roteiros.html">Roteiros Personalizados</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <img src="imagens/Banner-home 1.png" alt="Banner Home" class="banner-home">
+        
+        <main>
+            <div class="main-container">
+                <div class="text-container">
+                    <p>Está planejando a viagem dos seus sonhos e não sabe por onde começar? Nós podemos ajudar!<br>
+                    No Blog de Viagem - Roteiros Personalizados, nossa missão é oferecer a você um planejamento de viagem único, de acordo com os seus gostos, interesses e necessidades.</p>
+                    <p>Aqui, você pode criar roteiros totalmente personalizados, escolhendo os melhores destinos, atividades e experiências que mais combinam com o seu estilo de viagem. Se você é fã de aventuras emocionantes, cultura local, gastronomia deliciosa ou momentos de descanso, temos o roteiro ideal para você.</p>
+                </div>
+            </div>
+        </main>
+
+        <hr>
+
+        <main>
+            <section class="content">
+                <div class="column">
+                    <h3>Explore os melhores lugares</h3>
+                    <p>Seja em uma viagem curta para destinos próximos ou em uma aventura internacional, oferecemos uma seleção incrível de locais ao redor do mundo. Descubra os melhores lugares para visitar de acordo com suas preferências e disponibilidade.</p>
+                </div>
+                <div class="column">
+                    <h3>Dicas valiosas</h3>
+                    <p>Receba recomendações sobre como aproveitar ao máximo sua viagem, desde a preparação até a experiência no destino. Dicas sobre como organizar a viagem, o que fazer em cada local e como garantir uma experiência única e inesquecível.</p>
+                </div>
+                <div class="column">
+                    <h3>Roteiros exclusivos</h3>
+                    <p>Crie itinerários feitos sob medida, de acordo com suas preferências e a duração da viagem. Personalize seus roteiros, incluindo os destinos, atividades e experiências que mais combinam com seu estilo, para tornar cada momento da viagem especial.</p>
+                </div>
+            </section>
+        </main>
+        <hr>
+        
+        <h2>Crie seu Roteiro Personalizado</h2>    
+        <form>
+            <label for="interesses">Quais seus interesses de viagem?</label>
+            <select id="interesses" name="interesses">
+                <option value="aventura">Aventura</option>
+                <option value="cultura">Cultura</option>
+                <option value="descanso">Descanso</option>
+                <option value="gastronomia">Gastronomia</option>
+            </select>
+            <label for="duração">Qual a duração da viagem?</label>
+            <input type="text" id="duração" name="duração" placeholder="Ex: 7 dias">
+            <button type="submit">Criar Roteiro</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Blog de Viagem - Todos os direitos reservados.</p>
+        <p> Desenvolvedor André Gomes</p>
+    </footer>
+</body>
+</html>

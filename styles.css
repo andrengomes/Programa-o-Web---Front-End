@@ -1,0 +1,330 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+}
+
+
+nav {
+    margin-top: 20px;
+}
+
+/* Estilos para a lista de navegação */
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+.nav-list li {
+    margin: 0 20px; 
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
+
+.banner-home {
+    width: 100%; 
+    height: auto; 
+    max-height: 80vh; 
+    object-fit: cover; 
+}
+
+
+/* CSS para centralizar e adicionar espaçamento aos parágrafos */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 50vh;
+    text-align: center; 
+}
+
+.text-container {
+    max-width: 800px;
+    margin: 10px auto; 
+    padding: 20px;
+}
+
+
+.text-container p {
+    margin-bottom: 20px; 
+    padding: 10px 0; 
+}
+
+
+.square {
+    background-color: #4A754A; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    width: 100%; 
+    box-sizing: border-box; 
+    border-top: 30px solid #4A754A; 
+    border-bottom: 30px solid #4A754A; 
+}
+.square p {
+    margin: 10px 0; 
+}
+
+h2 {
+    text-align: center; 
+    margin-top: 50px; 
+    margin-bottom: 50px; 
+    color: #4A754A; 
+}
+
+/* Estilos para o formulário */
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+form select, form input {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4A754A;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+
+/*4 Estilos para o rodapé */
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    width: 100%; 
+}
+
+/* Estilos gerais */
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+    display: flex; 
+    flex-direction: column; 
+}
+
+
+main {
+    flex: 1; 
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center; 
+    padding: 20px; 
+    width: 100%; 
+}
+
+/* Container geral da seção de dicas */
+.dicas {
+    padding: 40px 20px;
+    background-color: #f0f0f0; 
+    text-align: center;
+    border-top: 5px solid #4A754A; 
+    margin-bottom: 40px;
+}
+
+/* Título principal da seção */
+.dicas h2 {
+    font-size: 2.5rem; 
+    font-weight: 700;
+    color: #4A754A; 
+    margin-bottom: 30px;
+}
+
+.dicas-lista {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.dicas {
+    padding: 40px 20px;
+    background-color: #f0f0f0; 
+    text-align: center;
+    border-top: 5px solid #4A754A; 
+    margin: 0; 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 40px; 
+}
+
+/* Título principal da seção */
+.dicas h2 {
+    font-size: 2.5rem; 
+    font-weight: 700;
+    color: #4A754A; 
+    margin-bottom: 30px;
+}
+
+.dicas-lista {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px; 
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.dicas-lista li {
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.dicas-lista li:hover {
+    transform: translateY(-5px); /* Leve elevação ao passar o mouse */
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.dicas-lista h3 {
+    font-size: 1.5rem; 
+    font-weight: bold;
+    color: #4A754A; 
+    margin-bottom: 15px; 
+}
+
+
+.dicas-lista p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #333333; 
+}
+
+/* Estilo para telas pequenas */
+@media (max-width: 768px) {
+    .dicas-lista {
+        grid-template-columns: 1fr; 
+    }
+
+    .dicas h2 {
+        font-size: 2rem; 
+    }
+
+    .dicas-lista li {
+        padding: 15px; 
+    }
+}
+
+/* Resetando margens e paddings para todos os elementos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.roteiro-section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4A754A;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    font-size: 1.8rem;
+    color: #4A754A;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+
+p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+ul li strong {
+    color: #4A754A;
+}
+
+
+
+
